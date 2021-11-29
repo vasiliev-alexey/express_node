@@ -1,8 +1,4 @@
 {
   "files": [],
-  "references": [
-    { "path": "packages/game-engine/" },
-    { "path": "packages/game-view/" },
-    { "path": "packages/calc/" }
-  ]
+  "references": []
 }

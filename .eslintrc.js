@@ -33,13 +33,17 @@ module.exports = {
         ignoreComments: true,
       },
     ],
-
-    'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': [
-      'off',
-      { devDependencies: ['**/*.test.js'] },
+      'error',
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false,
+        packageDir: './',
+      },
     ],
-
+    'import/prefer-default-export': 'off',
+    'node/no-extraneous-import': 'off',
     'import/extensions': ['warn', 'never', { json: 'off' }], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
   },
 };
