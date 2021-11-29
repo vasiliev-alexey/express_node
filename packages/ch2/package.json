@@ -1,0 +1,15 @@
+{
+  "name": "ch2",
+  "version": "1.0.0",
+  "description": "Chapter 2 : Nodejs first steps",
+  "private": true,
+  "scripts": {
+    "run1": "ts-node src/01-helloworld.ts",
+    "run2": "ts-node src/02-helloworld.ts"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "vasiliev-alexey",
+  "license": "ISC"
+}
