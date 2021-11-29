@@ -1,7 +1,7 @@
 {
   "name": "express_node",
   "version": "1.0.0",
-  "description": "Веб-разработкаn с применением Node и Express",
+  "description": "Веб-разработка с применением Node и Express",
   "private": true,
   "scripts": {
     "lint-staged": "lint-staged",
