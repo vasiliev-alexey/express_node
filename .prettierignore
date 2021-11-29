@@ -2,3 +2,6 @@ coverage/
 dist/
 **/storybook-static/
 packages/game-engine/lib/
+
+
+home.handlebars
