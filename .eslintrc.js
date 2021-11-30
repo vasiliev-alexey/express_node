@@ -25,6 +25,8 @@ module.exports = {
       },
     ],
 
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+
     'node/no-missing-import': [
       'error',
       {
@@ -44,7 +46,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: false,
+        devDependencies: ['**/*.test.ts'],
         optionalDependencies: false,
         peerDependencies: false,
         packageDir: './',
