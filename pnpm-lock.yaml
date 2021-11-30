@@ -9,6 +9,7 @@ importers:
       '@types/node': ^16.10.2
       '@typescript-eslint/eslint-plugin': ^5.4.0
       '@typescript-eslint/parser': ^5.4.0
+      body-parser: ^1.19.0
       eslint: ^7.32.0
       eslint-config-airbnb-base: ^14.2.1
       eslint-config-prettier: ^8.3.0
@@ -30,6 +31,7 @@ importers:
       tslog: ^3.2.2
       typescript: ^4.5.2
     dependencies:
+      body-parser: 1.19.0
       express: 4.17.1
       express-handlebars: 6.0.2
       tslog: 3.2.2
@@ -58,10 +60,19 @@ importers:
       ts-node: 10.4.0_36929cccfdb926da0bb85cc291f27124
       typescript: 4.5.2
 
-  packages/ch2:
+  packages/ch02:
     specifiers: {}
 
-  packages/ch3:
+  packages/ch03:
+    specifiers: {}
+
+  packages/ch04:
+    specifiers: {}
+
+  packages/ch05:
+    specifiers: {}
+
+  packages/ch06:
     specifiers: {}
 
 packages:
