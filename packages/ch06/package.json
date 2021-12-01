@@ -1,7 +1,7 @@
 {
-  "name": "ch5",
+  "name": "ch6",
   "version": "1.0.0",
-  "description": "Chapter 5: Test and QA",
+  "description": "Chapter 6: Объекты запроса и ответа",
   "main": "./src/meadowlark.ts",
   "private": true,
   "scripts": {
