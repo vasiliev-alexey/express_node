@@ -1,0 +1,27 @@
+{
+  "name": "ch9",
+  "version": "1.0.0",
+  "description": "Chapter 10: Промежуточное ПО",
+  "main": "src/mailer.ts",
+  "private": true,
+  "scripts": {
+    "serve": "ts-node src/mailer.ts",
+    "html-mail": "ts-node src/html-email.ts",
+    "web-send": "ts-node src/meadowlark.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "jest"
+  ],
+  "dependencies": {
+    "nodemailer": "^6.7.2",
+    "html-to-formatted-text": "^2.7.0"
+  },
+  "author": "vasiliev-alexey",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.4"
+  }
+}

@@ -98,6 +98,20 @@ importers:
   packages/ch09:
     specifiers: {}
 
+  packages/ch10:
+    specifiers: {}
+
+  packages/ch11:
+    specifiers:
+      '@types/nodemailer': ^6.4.4
+      html-to-formatted-text: ^2.7.0
+      nodemailer: ^6.7.2
+    dependencies:
+      html-to-formatted-text: 2.7.0
+      nodemailer: 6.7.2
+    devDependencies:
+      '@types/nodemailer': 6.4.4
+
 packages:
   /@babel/code-frame/7.12.11:
     resolution:
@@ -2249,6 +2263,15 @@ packages:
       {
         integrity: sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA==,
       }
+    dev: true
+
+  /@types/nodemailer/6.4.4:
+    resolution:
+      {
+        integrity: sha512-Ksw4t7iliXeYGvIQcSIgWQ5BLuC/mljIEbjf615svhZL10PE9t+ei8O9gDaD3FPCasUJn9KTLwz2JFJyiiyuqw==,
+      }
+    dependencies:
+      '@types/node': 16.11.10
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -5284,6 +5307,15 @@ packages:
       }
     dev: true
 
+  /html-to-formatted-text/2.7.0:
+    resolution:
+      {
+        integrity: sha512-dwAWKPVKf9LeNSQ3FBok3Z6PqNtino2o828/O5MMg9NHMBDmUZXAG5omFyptB4ouBasiE0C0B2WUMAs+BVKQAQ==,
+      }
+    dependencies:
+      striptags: 3.1.1
+    dev: false
+
   /http-cache-semantics/4.1.0:
     resolution:
       {
@@ -7448,6 +7480,14 @@ packages:
       }
     dev: true
 
+  /nodemailer/6.7.2:
+    resolution:
+      {
+        integrity: sha512-Dz7zVwlef4k5R71fdmxwR8Q39fiboGbu3xgswkzGwczUfjp873rVxt1O46+Fh0j1ORnAC6L9+heI8uUpO6DT7Q==,
+      }
+    engines: { node: '>=6.0.0' }
+    dev: false
+
   /nopt/4.0.3:
     resolution:
       {
@@ -9353,6 +9393,10 @@ packages:
       }
     engines: { node: '>=8' }
     dev: true
+
+  /striptags/3.1.1:
+    resolution: { integrity: sha1-yMPn/db7S7OjKjt1LltePjgJPr0= }
+    dev: false
 
   /strong-log-transformer/2.1.0:
     resolution:
