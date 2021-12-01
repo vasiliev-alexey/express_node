@@ -28,7 +28,10 @@
     "express-handlebars": "^6.0.2",
     "tslog": "^3.2.2",
     "body-parser": "^1.19.0",
-    "multiparty": "^4.2.2"
+    "multiparty": "^4.2.2",
+    "dotenv": "^10.0.0",
+    "cookie-parser": "^1.4.6",
+    "express-session": "^1.17.2"
   },
   "devDependencies": {
     "@jest-mock/express": "^1.4.5",
@@ -54,7 +57,9 @@
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2",
-    "@types/multiparty": "^0.0.33"
+    "@types/multiparty": "^0.0.33",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express-session": "^1.17.4"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --fix",
