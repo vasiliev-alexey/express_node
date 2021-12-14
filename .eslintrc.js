@@ -44,7 +44,7 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': [
-      'error',
+      'off',
       {
         devDependencies: ['**/*.test.ts'],
         optionalDependencies: false,

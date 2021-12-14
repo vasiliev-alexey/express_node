@@ -1,0 +1,31 @@
+{
+  "name": "ch12",
+  "version": "1.0.0",
+  "description": "Глава 12 • Промышленная эксплуатация",
+  "main": "src/mailer.ts",
+  "private": true,
+  "scripts": {
+    "serve": "ts-node src/mailer.ts",
+    "stress": "artillery quick --count 10 -n 20 http://localhost:3000/",
+    "html-mail": "ts-node src/html-email.ts",
+    "web-send": "ts-node src/meadowlark.ts",
+    "test": "jest",
+    "pm2_run": "pm2 start ts-node -- --type-check -r tsconfig-paths/register"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "morgan"
+  ],
+  "dependencies": {
+    "forever": "^4.0.1",
+    "morgan": "^1.10.0",
+    "pm2": "^5.1.2"
+  },
+  "author": "vasiliev-alexey",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/morgan": "^1.9.3",
+    "artillery": "^1.7.9"
+  }
+}

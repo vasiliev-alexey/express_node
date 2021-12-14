@@ -1,5 +1,5 @@
 {
-  "name": "ch7",
+  "name": "ch8",
   "version": "1.0.0",
   "description": "Chapter 7: Шаблонизация с помощью Handlebars",
   "main": "./src/meadowlark.ts",
