@@ -1,0 +1,38 @@
+name: Build
+
+on: [pull_request, push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Node inst
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.0.2
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+
+      - name: Lint check
+        run: |
+          npm run lint
+
+      - name: 'Send telegram notification'
+        if: ${{ always() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TG_TO }}
+          token: ${{ secrets.TG_TOKEN }}
+          message: |
+            ${{ (job.status == 'success' && '✅' ) || '⛔'}} repository: ${{ github.repository }}
+            wf: ${{github.workflow}}
+            event: ${{github.event.name}}
+            status: ${{job.status}} ${{ (job.status == 'success' && '🚀 🦉 🚀' ) || '🔥🔥 ⛔ 🔥🔥'}}

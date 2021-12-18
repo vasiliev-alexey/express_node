@@ -1,0 +1,50 @@
+{
+  "name": "express_node",
+  "version": "1.0.0",
+  "description": "Веб-разработка с применением Node и Express",
+  "private": true,
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasiliev-alexey/express_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasiliev-alexey/express_node/issues"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.2.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "eslint-plugin-node": "^11.1.0",
+    "@typescript-eslint/parser": "^5.4.0"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix",
+    "*.{js,ts,md,json,yml,html}": "prettier --write"
+  },
+  "homepage": "https://github.com/vasiliev-alexey/express_node#readme"
+}
