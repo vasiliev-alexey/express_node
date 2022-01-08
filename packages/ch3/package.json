@@ -1,0 +1,16 @@
+{
+  "name": "ch3",
+  "version": "1.0.0",
+  "description": "Chapter  : Express begin",
+  "main": "./src/meadowlark.ts",
+  "private": true,
+  "scripts": {
+    "serve": "ts-node src/meadowlark.ts"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "vasiliev-alexey",
+  "license": "ISC"
+}
