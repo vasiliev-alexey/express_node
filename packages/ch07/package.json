@@ -1,7 +1,7 @@
 {
-  "name": "ch6",
+  "name": "ch7",
   "version": "1.0.0",
-  "description": "Chapter 6: Объекты запроса и ответа",
+  "description": "Chapter 7: Шаблонизация с помощью Handlebars",
   "main": "./src/meadowlark.ts",
   "private": true,
   "scripts": {
